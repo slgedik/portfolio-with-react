@@ -1,28 +1,39 @@
 import React from 'react';
-
+import { FaGithub } from 'react-icons/fa';
 export default function Project() {
+    function handleClick(){
+        window.open('https://github.com/slgedik', '_blank');
+    }
     return (
-        <section id="projects" className="projects items-center ">
-            <h2 className='pt-8'>To access my projects</h2>
+        <div id="projects" className="projects items-center " style={{
+            backgroundImage: 'url(https://static.vecteezy.com/system/resources/thumbnails/040/517/714/small/white-fabric-loop-animated-background-free-video.jpg)',
+            backgroundSize: 'cover', 
+            backgroundPosition: 'center', 
+            backgroundRepeat: 'no-repeat',  
+          }}>
+            <h2 className='pt-6 pb-4 underline decoration-wavy italic font-semibold'>To access my projects</h2>
             <div
                 className="items-center flex justify-center"
                
             >
-                <a href='https://github.com/slgedik'  style={{
-                    backgroundImage: 'url(https://media4.giphy.com/media/A7LF3J4uMJQ4r8ApLg/giphy.gif?cid=6c09b952zzmkie3ehc8bw1yldiqjdsmh62svypqz4twu8abl&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s)',
-                    backgroundSize: 'cover', // GIF'in boyutunu butonla uyumlu olacak şekilde ayarladık
-                    backgroundPosition: 'center', // GIF'i div'in tam ortasında konumlandırdık
-                    backgroundRepeat: 'no-repeat', // GIF'in tekrarlanmamasını sağladık
-                    height: '50px', // Buton boyutunda yükseklik
-                    width: '150px', // Buton boyutunda genişlik
-                    border: 'none', // Kenarlık yok
-                    borderRadius: '5px', // Yuvarlak köşeler
-                    cursor: 'pointer', // Tıklanabilir görünüm
-                    display: 'flex', // Flexbox düzeni
-                    justifyContent: 'center', // İçeriği yatayda ortalar
-                    alignItems: 'center', // İçeriği dikeyde ortalar
-                }}></a>
+                <button
+                onClick={handleClick}
+                style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    backgroundColor: '#333',
+                    color: '#fff',
+                    border: 'none',
+                    borderRadius: '5px',
+                    padding: '10px 15px',
+                    cursor: 'pointer',
+                    fontSize: '16px'
+                }}
+                >
+                <FaGithub style={{ marginRight: '8px' }} size={20} />
+                Click Here
+                </button>
             </div>
-        </section>
+        </div>
     );
 }

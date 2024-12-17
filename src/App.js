@@ -8,10 +8,10 @@ import './App.css';
 import Home from './Components/Home';
 const App = () => {
   return (
-    <div className="app-container">
+    <div className="app-container"  >
       <Header />
-      <Home/>
-      <About />
+      <Home />
+      <About  />
       <Projects />
       <Contact />
     </div>
