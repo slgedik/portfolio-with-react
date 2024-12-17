@@ -7,29 +7,6 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Scroll Snap Container */
-.scroll-container {
-  display: flex;
-  flex-direction: column;
-  scroll-snap-type: y mandatory;
-  /*overflow-y: scroll;*/
-  overflow-y: auto;
-
-  height: 100vh;
-}
-
-/* Scroll Snap Her Bir Bölüm */
-.scroll-container > section {
-  scroll-snap-align: start;
-  min-height: 100vh;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-
 /* Bölüm Başlıkları */
 h2 {
   font-size: 2rem;
@@ -37,7 +14,6 @@ h2 {
   color: #444;
 }
 
-/* About Bölümü */
 .about {
   /*background: #964747;*/
   text-align: center;
@@ -46,14 +22,10 @@ h2 {
   
 }
 
-
-
-/* Projects Bölümü */
 .projects {
   background: #ddd;
   text-align: center;
   height: 30vh;
-  /*min-height: 60vh;*/
 }
 
 .projects .project-item {
@@ -65,7 +37,6 @@ h2 {
   width: 80%;
 }
 
-/* Contact Bölümü */
 .contact {
   background: #fafafa;
   text-align: center;
@@ -73,19 +44,12 @@ h2 {
   /*min-height: 60vh;*/
 }
 
-.contact-form {
-  margin-top: 20px;
-}
-
-.contact-form label {
-  display: block;
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-footer {
-  background: #333;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
+/* Özel medya sorguları */
+@media (max-width: 640px) {
+  h2 {
+    font-size: 1.5rem; /* Mobil başlık boyutunu küçültme */
+  }
+  .about, .projects, .contact {
+    padding: 10px;
+  }
 }

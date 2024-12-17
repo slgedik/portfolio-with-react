@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 export default function Header() {
   return (
     <header className="header">
-    <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+    <nav class="flex items-center justify-between flex-wrap bg-neutral-800 p-6">
         
         <div class="block lg:hidden">
             <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
@@ -11,13 +11,13 @@ export default function Header() {
             </button>
         </div>
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-            <div class="text-sm lg:flex-grow">
+            <div class="text-sm lg:flex-grow ml-4">
           
             <Link 
               to="about" 
               smooth={true} 
               duration={1000} 
-              className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 text-lg hover:text-white mr-4 cursor-pointer"
+              className="block mt-4 lg:inline-block lg:mt-0 text-white text-lg hover:text-teal-200 mr-4 cursor-pointer"
             >
               About Me
             </Link>
@@ -25,7 +25,7 @@ export default function Header() {
               to="projects" 
               smooth={true} 
               duration={1000} 
-              className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 text-lg hover:text-white mr-4 cursor-pointer"
+              className="block mt-4 lg:inline-block lg:mt-0 text-white text-lg hover:text-teal-200 mr-4 cursor-pointer"
             >
               Projects
             </Link>
@@ -33,7 +33,7 @@ export default function Header() {
               to="contact" 
               smooth={true} 
               duration={1000} 
-              className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 text-lg hover:text-white mr-4 cursor-pointer"
+              className="block mt-4 lg:inline-block lg:mt-0 text-white text-lg hover:text-teal-200 mr-4 cursor-pointer"
             >
               Contact
             </Link>

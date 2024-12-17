@@ -3,7 +3,7 @@ import { FaPhone, FaEnvelope } from 'react-icons/fa';
 export default function Contact() {
     return(
     <div id="contact" className="contact" >
-      <h2 className='mt-8 underline decoration-wavy italic font-semibold'>Contact Me</h2>
+      <h2 className='mt-8 underline decoration-wavy italic font-semibold decoration-rose-800'>Contact me</h2>
       <div className='flex items-center justify-center'>
         <div className='flex items-center mb-2 mr-6'>
           <FaPhone style={{ marginRight: '8px', color: '#0073e6' }} /> 

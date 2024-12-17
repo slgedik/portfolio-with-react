@@ -11,9 +11,9 @@ export default function Project() {
             backgroundPosition: 'center', 
             backgroundRepeat: 'no-repeat',  
           }}>
-            <h2 className='pt-6 pb-4 underline decoration-wavy italic font-semibold'>To access my projects</h2>
+            <h2 className='pt-6 pb-4 underline decoration-wavy italic font-semibold decoration-rose-800'>To Access My Projects</h2>
             <div
-                className="items-center flex justify-center"
+                className="items-center flex justify-center hover:text-teal-200"
                
             >
                 <button
@@ -21,7 +21,7 @@ export default function Project() {
                 style={{
                     display: 'flex',
                     alignItems: 'center',
-                    backgroundColor: '#333',
+                    /*backgroundColor: '#333',*/
                     color: '#fff',
                     border: 'none',
                     borderRadius: '5px',
@@ -29,6 +29,7 @@ export default function Project() {
                     cursor: 'pointer',
                     fontSize: '16px'
                 }}
+                className='bg-[#333] hover:bg-black'
                 >
                 <FaGithub style={{ marginRight: '8px' }} size={20} />
                 Click Here
